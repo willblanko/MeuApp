@@ -1,70 +1,43 @@
+# Meu Primeiro App React Native
 
-# React Native Studio - Configuração e Implementação Prática
+Este é um aplicativo simples desenvolvido em React Native que implementa um contador básico. O aplicativo permite ao usuário incrementar e decrementar o valor do contador através de botões.
 
-## Sobre o Projeto
+## Como funciona
 
-Este projeto foi desenvolvido como parte de um trabalho acadêmico para a disciplina de Programação para Dispositivos Móveis. Ele consiste em uma aplicação web educacional que demonstra os passos necessários para configurar corretamente um ambiente de desenvolvimento React Native e implementar boas práticas de desenvolvimento.
+O aplicativo utiliza o hook `useState` do React para gerenciar o estado do contador. Os botões "Incrementar" e "Decrementar" atualizam o valor do contador, que é exibido na tela.
 
-## Funcionalidades
+### Estrutura do Código
 
-- **Guia de Configuração**: Instruções passo a passo para configurar o ambiente de desenvolvimento React Native
-- **Showcase de Componentes**: Demonstração dos principais componentes utilizados no React Native
-- **Estrutura de Projetos**: Recomendações para organização de código e arquivos
-- **Recursos**: Biblioteca de links, tutoriais e ferramentas para desenvolvimento
+- **`App.js`**: Contém a lógica principal do aplicativo.
+  - **Estado**: `contador` é o valor atual do contador, gerenciado pelo `useState`.
+  - **Botões**:
+    - "Incrementar": Aumenta o valor do contador em 1.
+    - "Decrementar": Diminui o valor do contador em 1.
+  - **Estilos**: Definidos usando `StyleSheet` para personalizar a aparência do aplicativo.
 
-## Tecnologias Utilizadas
+### Componentes
 
-- **React**: Biblioteca para construção de interfaces
-- **TypeScript**: Superset tipado de JavaScript
-- **Tailwind CSS**: Framework CSS para estilização rápida
-- **Vite**: Ferramenta de build e desenvolvimento
-- **React Router**: Navegação entre páginas
-- **Shadcn/ui**: Componentes de UI reutilizáveis
+- **`Text`**: Exibe o título e o valor atual do contador.
+- **`Button`**: Botões para incrementar e decrementar o contador.
+- **`View`**: Contêineres para organizar os componentes na tela.
 
-## Estrutura do Projeto
+### Estilos
 
-```
-src/
-├── components/       # Componentes reutilizáveis
-├── pages/            # Páginas da aplicação
-├── hooks/            # Custom hooks
-├── lib/              # Utilitários e funções auxiliares
-└── main.tsx          # Ponto de entrada da aplicação
-```
+- **`container`**: Centraliza todo o conteúdo na tela.
+- **`titulo`**: Estilo para o título do aplicativo.
+- **`contador`**: Estilo para o texto que exibe o valor do contador.
+- **`botoesContainer`**: Organiza os botões em uma linha com espaçamento igual.
 
-## Como Executar Localmente
+## Como Executar
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/react-native-studio.git
-```
+1. Clone o repositório.
+2. Instale as dependências com `npm install`.
+3. Execute o aplicativo com `react-native run-android` (ou `run-ios` para iOS).
 
-2. Entre no diretório do projeto:
-```bash
-cd react-native-studio
-```
+## Contribuição
 
-3. Instale as dependências:
-```bash
-npm install
-```
-
-4. Execute a aplicação em modo de desenvolvimento:
-```bash
-npm run dev
-```
-
-5. Acesse a aplicação em `http://localhost:8080`
-
-## Autoria e Contribuições
-
-Este projeto foi desenvolvido por [Seu Nome] como parte de um trabalho acadêmico para a disciplina de [Nome da Disciplina] na [Nome da Instituição].
+Sinta-se à vontade para contribuir com melhorias ou correções. Abra uma issue ou envie um pull request.
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
-
-## Agradecimentos
-
-- Professores e colegas que forneceram feedback durante o desenvolvimento
-- Comunidade React Native pelo suporte e documentação
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
